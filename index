@@ -15,7 +15,7 @@
     <div class="card">
         <h1>CSHRR Volunteer Portal</h1>
         <p>Please log in to access the administration area.</p>
-        <a href="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" class="btn">Login with Google</a>
+        <a href="https://script.google.com/macros/s/AKfycbzRroff7ZF3rAD4qfvc9iGn5Z0N2sbEwHUswi_dCkwxcZLcEA8QtKQN0b0PV1wVL4FZYg/exec" class="btn">Login with Google</a>
     </div>
 </body>
 </html>
