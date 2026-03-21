@@ -5,17 +5,26 @@
     <style>
         body { font-family: sans-serif; text-align: center; padding-top: 50px; }
         .bookmark-alert { color: #d9534f; font-weight: bold; font-size: 1.2em; }
+        .enter-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 16px 36px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .enter-btn:hover { background-color: #45a049; }
     </style>
 </head>
 <body>
-    <h1>Redirecting to Volunteer Portal...</h1>
-    <p class="bookmark-alert">STOP! Please bookmark this URL (www.cshrrvolunteer.us) now!</p>
-    <p>If you are not redirected in 5 seconds, <a href="YOUR_GOOGLE_SCRIPT_URL">click here</a>.</p>
-
-    <script>
-        setTimeout(function(){
-            window.location.href = "https://script.google.com/macros/s/AKfycbzRroff7ZF3rAD4qfvc9iGn5Z0N2sbEwHUswi_dCkwxcZLcEA8QtKQN0b0PV1wVL4FZYg/exec";
-        }, 4000); // 4 second delay to give them time to bookmark
-    </script>
+    <h1>CSHRR Volunteer Portal</h1>
+    <p class="bookmark-alert">📌 Please bookmark <strong>www.cshrrvolunteer.us</strong> now!</p>
+    <p>Click the button below to enter the portal.</p>
+    <a class="enter-btn" href="https://script.google.com/macros/s/AKfycbzRroff7ZF3rAD4qfvc9iGn5Z0N2sbEwHUswi_dCkwxcZLcEA8QtKQN0b0PV1wVL4FZYg/exec">
+        Enter Volunteer Portal →
+    </a>
 </body>
 </html>
