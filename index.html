@@ -2,66 +2,23 @@
 <html>
 <head>
     <title>CSHRR Volunteer Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            min-height: 100vh;
-            background: #7b2d8b;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-            font-family: sans-serif;
-        }
-        .card {
-            background: #fff;
-            border-radius: 16px;
-            padding: 2.5rem 2rem;
-            max-width: 400px;
+        html, body { height: 100%; overflow: hidden; }
+        iframe {
             width: 100%;
-            text-align: center;
-        }
-        .logo {
-            width: 72px; height: 72px;
-            border-radius: 50%;
-            background: #7b2d8b;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.25rem;
-        }
-        .logo svg { width: 36px; height: 36px; fill: #fff; }
-        h1 { font-size: 22px; font-weight: 500; color: #2c2c2a; margin-bottom: 0.25rem; }
-        .org { font-size: 14px; color: #888780; margin-bottom: 2rem; }
-        .enter-btn {
+            height: 100%;
+            border: none;
             display: block;
-            width: 100%;
-            padding: 14px;
-            background: #7b2d8b;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 500;
-            border-radius: 10px;
-            text-decoration: none;
         }
-        .enter-btn:hover { background: #6a2578; }
-        .note { margin-top: 1.25rem; font-size: 13px; color: #888780; }
-        .note strong { color: #7b2d8b; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="logo">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-        </div>
-        <h1>CSHRR Volunteer Portal</h1>
-        <p class="org">Campbell Safe Haven</p>
-        <a class="enter-btn" href="https://script.google.com/macros/s/AKfycbwZLirK7TfQ6BImmubZxBcnQhlmO_XPBKxu0Y7o-RWvH-m5kJwF_ORmFYcV1sHHZn1W/exec" target="_blank" rel="noopener noreferrer">
-            Enter Portal
-        </a>
-        <p class="note">📌 Bookmark <strong>www.cshrrvolunteer.us</strong> for quick access</p>
-    </div>
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbwZLirK7TfQ6BImmubZxBcnQhlmO_XPBKxu0Y7o-RWvH-m5kJwF_ORmFYcV1sHHZn1W/exec"
+        allow="same-origin"
+        sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-modals">
+    </iframe>
 </body>
 </html>
