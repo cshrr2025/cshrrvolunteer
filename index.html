@@ -3,28 +3,65 @@
 <head>
     <title>CSHRR Volunteer Portal</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
-        .bookmark-alert { color: #d9534f; font-weight: bold; font-size: 1.2em; }
-        .enter-btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 16px 36px;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 1.2em;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            min-height: 100vh;
+            background: #7b2d8b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            font-family: sans-serif;
         }
-        .enter-btn:hover { background-color: #45a049; }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .logo {
+            width: 72px; height: 72px;
+            border-radius: 50%;
+            background: #7b2d8b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem;
+        }
+        .logo svg { width: 36px; height: 36px; fill: #fff; }
+        h1 { font-size: 22px; font-weight: 500; color: #2c2c2a; margin-bottom: 0.25rem; }
+        .org { font-size: 14px; color: #888780; margin-bottom: 2rem; }
+        .enter-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background: #7b2d8b;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .enter-btn:hover { background: #6a2578; }
+        .note { margin-top: 1.25rem; font-size: 13px; color: #888780; }
+        .note strong { color: #7b2d8b; }
     </style>
 </head>
 <body>
-    <h1>CSHRR Volunteer Portal</h1>
-    <p class="bookmark-alert">📌 Please bookmark <strong>www.cshrrvolunteer.us</strong> now!</p>
-    <p>Click the button below to enter the portal.</p>
-    <a class="enter-btn" href="https://script.google.com/macros/s/AKfycbwZLirK7TfQ6BImmubZxBcnQhlmO_XPBKxu0Y7o-RWvH-m5kJwF_ORmFYcV1sHHZn1W/exec">
-        Enter Volunteer Portal →
-    </a>
+    <div class="card">
+        <div class="logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+        </div>
+        <h1>CSHRR Volunteer Portal</h1>
+        <p class="org">Campbell Safe Haven</p>
+        <a class="enter-btn" href="https://script.google.com/macros/s/AKfycbwZLirK7TfQ6BImmubZxBcnQhlmO_XPBKxu0Y7o-RWvH-m5kJwF_ORmFYcV1sHHZn1W/exec">
+            Enter Portal
+        </a>
+        <p class="note">📌 Bookmark <strong>www.cshrrvolunteer.us</strong> for quick access</p>
+    </div>
 </body>
 </html>
